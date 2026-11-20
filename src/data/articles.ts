@@ -1,9 +1,9 @@
-import { Article } from '../types/football';
 import lamineYamalActionImg from '../assets/players/lamine-yamal-action.jpg';
 import lennartKarlActionImg from '../assets/players/lennart-karl-action.jpg';
-import { MEDIA_IMAGES } from './media';
 import pauCubarsiActionImg from '../assets/players/pau-cubarsi-action.jpg';
 import warrenZaireEmeryActionImg from '../assets/players/warren-zaire-emery-action.jpg';
+import { Article } from '../types/football';
+import { MEDIA_IMAGES } from './media';
 
 export const ARTICLES: Article[] = [
   {
@@ -11,14 +11,46 @@ export const ARTICLES: Article[] = [
     title: 'Cara Klub Papan Atas Premier League Mengubah Pressing Lini Tengah Jadi Senjata Juara',
     excerpt: 'Jebakan counter-pressing di lini tengah kini menjadi penentu utama kemenangan klub papan atas Premier League dalam lima detik pertama setelah kehilangan bola.',
     category: 'Premier League',
+    rubric: 'Analisis dan Opini',
+    newsType: 'Analisis & Opini',
     publishedAt: '15 November 2026',
+    publishedTime: '09:30 WIB',
+    updatedAt: '18 November 2026 · 14:15 WIB',
     readTime: '6 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.heroPremierLeague,
     imageCaption: 'Duel lini tengah bertempo tinggi mewarnai laga malam di bawah sorot lampu stadion Inggris.',
+    photoCredit: {
+      caption: 'Duel lini tengah bertempo tinggi mewarnai laga malam di bawah sorot lampu stadion Inggris.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Nama fotografer, sumber dokumentasi pertandingan, dan lisensi foto asli perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'Premier League — Situs Resmi Kompetisi',
+        type: 'Institusi Resmi',
+        url: 'https://www.premierleague.com',
+        note: 'Rujukan konteks jadwal, klasemen, dan pertandingan resmi musim 2026/27.',
+      },
+    ],
+    sourceCompletionNote:
+      'Referensi data statistik pertandingan spesifik dan rujukan analis eksternal perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Artikel ini berupa analisis taktik deskriptif. Kutipan wawancara langsung dari pelatih atau pemain belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Penerapan jebakan counter-pressing agresif di lini tengah untuk merebut bola dalam lima detik pertama.',
+      who: 'Klub-klub papan atas Premier League, gelandang nomor 8, dan manajer tim peserta kompetisi.',
+      when: 'Musim kompetisi 2026/27 (dipublikasikan 15 November 2026).',
+      where: 'Kompetisi Premier League Inggris.',
+      why: 'Untuk membongkar blok pertahanan rendah lawan dan menciptakan peluang tembakan lebih berbahaya saat masa transisi.',
+      how: 'Memancing bola ke gelandang jangkar lawan, menyergap dari sisi buta, menaikkan bek sayap, dan merotasi gelandang pada menit ke-60.',
+    },
     featured: true,
     breaking: true,
     pullQuote: 'Tim papan atas tidak lagi menunggu lawan menyusun blok pertahanan; empat langkah pertama setelah kehilangan bola langsung menentukan arah permainan.',
@@ -48,14 +80,46 @@ export const ARTICLES: Article[] = [
     title: 'Malam Eropa di Format Baru Champions League: Mengapa Setiap Selisih Gol Kini Krusial',
     excerpt: 'Format klasemen tunggal 36 tim membuat setiap gol tambahan di fase liga Champions League menentukan tiket otomatis ke babak 16 besar dan menghindari jalur play-off.',
     category: 'Champions League',
+    rubric: 'Liga dan Kompetisi',
+    newsType: 'Hard News',
     publishedAt: '14 November 2026',
+    publishedTime: '18:00 WIB',
+    updatedAt: '18 November 2026 · 14:20 WIB',
     readTime: '6 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.championsLeagueNight,
     imageCaption: 'Atmosfer malam UEFA Champions League menjelang laga krusial antar raksasa Eropa.',
+    photoCredit: {
+      caption: 'Atmosfer malam UEFA Champions League menjelang laga krusial antar raksasa Eropa.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer liputan dan pemilik hak cipta dokumentasi resmi perlu dilengkapi redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'UEFA Champions League — Regulasi & Klasemen Resmi',
+        type: 'Institusi Resmi',
+        url: 'https://www.uefa.com/uefachampionsleague/',
+        note: 'Rujukan format klasemen tunggal 36 tim dan pembagian zona lolos otomatis serta play-off.',
+      },
+    ],
+    sourceCompletionNote:
+      'Tautan rujukan berita pertandingan spesifik dan pernyataan resmi narasumber perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung dari pelatih atau perwakilan klub peserta belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Dampak format klasemen tunggal 36 tim yang membuat selisih gol menjadi penentu tiket otomatis 16 besar.',
+      who: '36 klub peserta fase liga UEFA Champions League beserta pelatih dan penyerang utamanya.',
+      when: 'Fase liga musim 2026/27 menjelang pertandingan bulan November hingga Februari.',
+      where: 'Kompetisi UEFA Champions League di seluruh Eropa.',
+      why: 'Persaingan poin yang ketat di satu tabel besar memaksa klub mengejar posisi delapan besar demi menghindari dua laga play-off ekstra.',
+      how: 'Klub unggulan mempertahankan pemain depan utama hingga menit akhir untuk memperbesar margin gol serta menyesuaikan taktik melawan delapan lawan berbeda.',
+    },
     featured: true,
     breaking: true,
     pullQuote: 'Satu gol tambahan di masa injury time bulan November bisa mengangkat posisi klub empat tingkat sekaligus menghindarkan mereka dari laga play-off Februari.',
@@ -85,14 +149,45 @@ export const ARTICLES: Article[] = [
     title: 'Kebangkitan Winger Klasik: Mengapa Dribel Satu Lawan Satu Kembali Jadi Senjata Mematikan',
     excerpt: 'Pelatih top Eropa kembali mengandalkan penyerang sayap bertipe pelari garis tepi untuk membongkar pertahanan lima bek yang menutup ruang tengah.',
     category: 'Premier League',
+    rubric: 'Analisis dan Opini',
+    newsType: 'Analisis & Opini',
     publishedAt: '13 November 2026',
+    publishedTime: '15:20 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.playerActionForward,
     imageCaption: 'Kecepatan langsung menyusuri garis tepi memaksa formasi lima bek lawan pecah konsentrasi.',
+    photoCredit: {
+      caption: 'Kecepatan langsung menyusuri garis tepi memaksa formasi lima bek lawan pecah konsentrasi.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer asli dan sumber foto lapangan perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'Premier League — Portal Resmi',
+        type: 'Institusi Resmi',
+        url: 'https://www.premierleague.com',
+        note: 'Rujukan konteks taktik pertandingan Premier League.',
+      },
+    ],
+    sourceCompletionNote:
+      'Data pelengkap statistik dribel dan rujukan studi taktik spesifik perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung narasumber (pelatih/pemain) belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Kembalinya peran winger klasik pelari garis tepi dan pola umpan tarik mendatar (cut-back).',
+      who: 'Para pelatih top Eropa dan penyerang sayap bertipe dribel satu lawan satu.',
+      when: 'Tren permainan musim 2026/27 (dipublikasikan 13 November 2026).',
+      where: 'Premier League dan liga-liga papan atas Eropa.',
+      why: 'Koridor sentral semakin tertutup oleh blok rapat dan formasi lima bek lawan.',
+      how: 'Mengisolasi winger di sisi berlawanan lewat umpan diagonal cepat, menyerang sisi luar bek, lalu mengirim cut-back ke lini kedua.',
+    },
     breaking: true,
     pullQuote: 'Ketika seorang winger berani beradu sprint melewati sisi luar bek sayap, skema bertahan serapi apa pun bisa runtuh seketika.',
     content: [
@@ -121,14 +216,45 @@ export const ARTICLES: Article[] = [
     title: 'Adu Taktik di Pinggir Lapangan: Tiga Penyesuaian Pelatih yang Mengubah Hasil Laga',
     excerpt: 'Modifikasi struktur build-up, perubahan titik pressing, dan substitusi spesialis sebelum menit ke-60 kini menjadi pembeda pelatih top di Bundesliga dan Eropa.',
     category: 'Bundesliga',
+    rubric: 'Klub',
+    newsType: 'Analisis & Opini',
     publishedAt: '12 November 2026',
+    publishedTime: '14:00 WIB',
     readTime: '6 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.tacticalManagerTouchline,
     imageCaption: 'Keputusan cepat dari area teknis sering kali membalikkan momentum laga yang buntu.',
+    photoCredit: {
+      caption: 'Keputusan cepat dari area teknis sering kali membalikkan momentum laga yang buntu.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Nama fotografer dan sumber arsip foto resmi perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'Bundesliga — Situs Resmi',
+        type: 'Institusi Resmi',
+        url: 'https://www.bundesliga.com',
+        note: 'Rujukan informasi resmi kompetisi Bundesliga.',
+      },
+    ],
+    sourceCompletionNote:
+      'Rujukan studi kasus laga spesifik dan kutipan konferensi pers pelatih perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung pelatih belum disertakan dalam naskah ini dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Tiga penyesuaian taktik cepat pelatih: build-up tiga bek asimetris, pergeseran titik pressing saat jeda, dan substitusi sebelum menit ke-60.',
+      who: 'Pelatih dan staf teknis klub-klub Bundesliga serta liga top Eropa.',
+      when: 'Sepanjang jalannya pertandingan musim 2026/27 (dipublikasikan 12 November 2026).',
+      where: 'Area teknis stadion Bundesliga dan kompetisi Eropa.',
+      why: 'Menunggu hingga menit ke-75 terlalu lambat karena momentum pertandingan modern berubah sangat cepat.',
+      how: 'Menarik gelandang bertahan ke garis belakang, membidik kaki lemah bek lawan saat jeda, dan memanfaatkan aturan lima pergantian pemain lebih awal.',
+    },
     breaking: false,
     content: [
       'Kemenangan di laga tensi tinggi Bundesliga dan liga top Eropa kini semakin sering ditentukan oleh reaksi taktis kilat dari pinggir lapangan. Menunggu hingga menit ke-75 untuk melakukan perubahan dinilai terlalu lambat saat ritme permainan bisa direbut lawan dalam sekejap.',
@@ -159,14 +285,45 @@ export const ARTICLES: Article[] = [
     title: 'Drama Menit Akhir: Mengapa Gol Injury Time Kian Sering Menentukan Laga Derbi Eropa',
     excerpt: 'Durasi tambahan waktu yang lebih akurat dan kedalaman skuad lima pergantian mengubah sepuluh menit terakhir derbi La Liga dan Eropa menjadi fase paling mematikan.',
     category: 'La Liga',
+    rubric: 'Liga dan Kompetisi',
+    newsType: 'Soft News / Feature',
     publishedAt: '11 November 2026',
+    publishedTime: '20:10 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.europeanDerbyCelebration,
     imageCaption: 'Selebrasi emosional di sudut lapangan setelah gol penentu pada menit akhir pertandingan.',
+    photoCredit: {
+      caption: 'Selebrasi emosional di sudut lapangan setelah gol penentu pada menit akhir pertandingan.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer pertandingan dan sumber foto pers perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'La Liga — Portal Resmi Kompetisi',
+        type: 'Institusi Resmi',
+        url: 'https://www.laliga.com',
+        note: 'Rujukan kompetisi La Liga Spanyol.',
+      },
+    ],
+    sourceCompletionNote:
+      'Data persentase gol menit akhir per musim dan rujukan media primer perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung pemain atau pengamat belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Meningkatnya jumlah gol penentu kemenangan pada fase akhir pertandingan setelah menit ke-85.',
+      who: 'Tim-tim yang bertanding dalam laga derbi La Liga dan kompetisi Eropa.',
+      when: 'Fase sepuluh menit terakhir dan masa tambahan waktu (injury time) sepanjang musim 2026/27.',
+      where: 'Stadion-stadion La Liga dan panggung derbi Eropa.',
+      why: 'Durasi tambahan waktu yang dihitung lebih akurat, kelelahan bek lawan, serta masuknya lima pemain pengganti bertenaga penuh.',
+      how: 'Tim yang tertinggal menukar bek sayap dengan penyerang, mendorong bek tinggi ke kotak penalti, dan memaksimalkan ketenangan eksekusi bola mati.',
+    },
     breaking: true,
     content: [
       'Lonjakan jumlah gol penentu kemenangan setelah menit ke-85 dalam laga derbi Eropa bukanlah kebetulan semata. Kombinasi durasi tambahan waktu (injury time) yang makin panjang dan masuknya lima tenaga segar membuat fase akhir laga menjadi sangat brutal bagi pemain bertahan.',
@@ -194,14 +351,45 @@ export const ARTICLES: Article[] = [
     title: 'Sorotan Pemain: Bagaimana Gelandang Box-to-Box Modern Mengatur Irama Permainan',
     excerpt: 'Kemampuan memindai ruang sebelum menerima bola, lolos dari pressing dengan satu sentuhan, dan membaca transisi menjadikan gelandang nomor 8 aset termahal di Eropa.',
     category: 'Champions League',
+    rubric: 'Profil Pemain',
+    newsType: 'Soft News / Feature',
     publishedAt: '10 November 2026',
+    publishedTime: '11:45 WIB',
     readTime: '6 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.playerSpotlightMidfielder,
     imageCaption: 'Ketenangan menguasai bola di ruang sempit menjadi ciri khas gelandang komplet masa kini.',
+    photoCredit: {
+      caption: 'Ketenangan menguasai bola di ruang sempit menjadi ciri khas gelandang komplet masa kini.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer dan keterangan sumber foto lapangan perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'UEFA Champions League — Analisis Teknis Kompetisi',
+        type: 'Institusi Resmi',
+        url: 'https://www.uefa.com/uefachampionsleague/',
+        note: 'Rujukan tren peran gelandang pada kompetisi antarklub Eropa.',
+      },
+    ],
+    sourceCompletionNote:
+      'Referensi riset performa dan kutipan pelatih/pemain terkait peran gelandang nomor 8 perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan langsung hasil wawancara narasumber belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Evolusi peran gelandang box-to-box modern (nomor 8) yang menggabungkan kecerdasan spasial, scanning, dan daya jelajah.',
+      who: 'Para gelandang tengah komplet di klub-klub elite Eropa.',
+      when: 'Sepanjang kompetisi Eropa musim 2026/27 (dipublikasikan 10 November 2026).',
+      where: 'Lini tengah pertandingan UEFA Champions League dan liga top Eropa.',
+      why: 'Formasi modern seperti 4-3-3 dan 3-2-4-1 menuntut gelandang mampu memutus serangan balik sekaligus memecah blok lawan.',
+      how: 'Melalui rutinitas scanning bahu sebelum bola datang, sentuhan pertama terarah, umpan vertikal, dan respons cepat menutup koridor tengah.',
+    },
     pullQuote: 'Gelandang nomor 8 terbaik sudah menemukan solusi keluar dari pressing lawan dua detik sebelum bola menyentuh kakinya.',
     content: [
       'Gelandang box-to-box modern tidak lagi dinilai semata dari jarak lari atau kebrutalan tekelnya. Metrik utama mereka kini adalah kecerdasan spasial di area paling sesak di atas lapangan. Menerima bola di bawah tekanan musuh dan mengubah arah serangan dalam dua sentuhan adalah standar mutlak.',
@@ -229,14 +417,45 @@ export const ARTICLES: Article[] = [
     title: 'Generasi Berikutnya: Lima Penyerang Muda U-21 yang Langsung Bersinar di Eropa',
     excerpt: 'Pembinaan akademi yang selaras dengan taktik tim utama membuat para penyerang muda U-21 langsung siap bersaing di laga bertekanan tinggi sejak usia 18 tahun.',
     category: 'Internasional',
+    rubric: 'Berita Sepak Bola',
+    newsType: 'Soft News / Feature',
     publishedAt: '9 November 2026',
+    publishedTime: '16:15 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.youthTalentPortrait,
     imageCaption: 'Langkah mantap pemain akademi dari lorong stadion menuju panggung utama sepak bola senior.',
+    photoCredit: {
+      caption: 'Langkah mantap pemain akademi dari lorong stadion menuju panggung utama sepak bola senior.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer dan data dokumentasi lapangan perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'UEFA — Pengembangan Kompetisi & Pemain Muda',
+        type: 'Institusi Resmi',
+        url: 'https://www.uefa.com',
+        note: 'Rujukan ekosistem pembinaan dan kompetisi sepak bola Eropa.',
+      },
+    ],
+    sourceCompletionNote:
+      'Daftar nama pemain rujukan spesifik dan sumber laporan akademi klub perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung direktur akademi atau pemain U-21 belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Fenomena penyerang muda U-21 lulusan akademi yang langsung menembus tim inti klub raksasa Eropa.',
+      who: 'Para penyerang muda berusia 18 hingga 20 tahun dan akademi klub-klub elite Eropa.',
+      when: 'Musim kompetisi 2026/27 (dipublikasikan 9 November 2026).',
+      where: 'Liga-liga top Eropa dan panggung tim nasional senior.',
+      why: 'Kurikulum akademi kini selaras dengan sistem taktik tim utama dan didukung program kebugaran fisik modern.',
+      how: 'Klub menyamakan pola bermain sejak level U-18, mengelola menit bermain dengan rotasi, dan memantau beban fisik berbasis data GPS.',
+    },
     content: [
       'Pemain berlabel U-21 masa kini tidak perlu lagi menunggu hingga usia matang untuk memimpin garis depan klub raksasa Eropa. Di sepanjang kompetisi musim ini, lulusan akademi berusia 18 hingga 20 tahun langsung dilempar sebagai starter di pertandingan genting.',
       'Ledakan bakat muda ini bukanlah kebetulan. Ini adalah buah dari revolusi kurikulum akademi Eropa yang kini mereplikasi sistem taktis skuad utama secara presisi kepada para pemain di kelompok usia muda.',
@@ -263,14 +482,45 @@ export const ARTICLES: Article[] = [
     title: 'Radar Bursa Musim Dingin: Mengapa Bek Kaki Kiri dan Gelandang Bertahan Jadi Incaran Utama',
     excerpt: 'Minimnya stok bek berkaki kidal yang fasih membangun serangan dan gelandang jangkar tahan tekanan membuat dua posisi ini paling diburu pada bursa Januari.',
     category: 'Transfer',
+    rubric: 'Klub',
+    newsType: 'Hard News',
     publishedAt: '8 November 2026',
+    publishedTime: '10:00 WIB',
     readTime: '6 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.transferStadiumPitch,
     imageCaption: 'Departemen pemandu bakat mematangkan daftar target jangka pendek jelang dibukanya bursa Januari.',
+    photoCredit: {
+      caption: 'Departemen pemandu bakat mematangkan daftar target jangka pendek jelang dibukanya bursa Januari.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer dan sumber dokumentasi lapangan perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'Premier League — Informasi Jendela Transfer Resmi',
+        type: 'Institusi Resmi',
+        url: 'https://www.premierleague.com',
+        note: 'Rujukan regulasi registrasi pemain dan aturan keuangan PSR.',
+      },
+    ],
+    sourceCompletionNote:
+      'Laporan bursa transfer spesifik dan konfirmasi narasumber klub terkait target Januari perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan langsung direktur olahraga atau agen pemain belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Prioritas rekrutmen bursa musim dingin pada posisi bek tengah berkaki kiri dan gelandang bertahan nomor 6.',
+      who: 'Departemen rekrutmen klub Premier League, Serie A, dan Bundesliga.',
+      when: 'Menjelang dibukanya bursa transfer musim dingin Januari 2027 (dipublikasikan 8 November 2026).',
+      where: 'Bursa transfer liga-liga utama Eropa.',
+      why: 'Stok pemain siap pakai di dua posisi tersebut langka, sementara tim butuh dampak cepat di tengah batasan finansial PSR/FFP.',
+      how: 'Klub menyiasati ketatnya regulasi keuangan melalui skema peminjaman enam bulan dengan opsi atau kewajiban beli permanen.',
+    },
     breaking: true,
     content: [
       'Jelang dibukanya bursa transfer musim dingin Januari, departemen rekrutmen klub-klub Premier League, Serie A, dan Bundesliga mengerucut pada dua kebutuhan paling mendesak: bek berkaki kidal dan gelandang bertahan nomor 6. Kelangkaan pemain siap pakai di dua posisi tersebut membuat harga pasar dan persaingan negosiasi diprediksi melonjak tajam.',
@@ -298,14 +548,45 @@ export const ARTICLES: Article[] = [
     title: 'Catatan Taktik Serie A: Mengapa Skema Tiga Bek Italia Tetap Sulit Ditembus di Eropa',
     excerpt: 'Rotasi bek tengah yang aktif naik membantu serangan dan peran dinamis wing-back menjadikan skema tiga bek Serie A salah satu sistem paling agresif di Eropa.',
     category: 'Serie A',
+    rubric: 'Liga dan Kompetisi',
+    newsType: 'Analisis & Opini',
     publishedAt: '7 November 2026',
+    publishedTime: '17:30 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.tacticalManagerTouchline,
     imageCaption: 'Adu strategi dari pinggir lapangan terus menghasilkan variasi serangan tajam di Serie A.',
+    photoCredit: {
+      caption: 'Adu strategi dari pinggir lapangan terus menghasilkan variasi serangan tajam di Serie A.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Kredit fotografer liputan Serie A perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'Lega Serie A — Situs Resmi Kompetisi',
+        type: 'Institusi Resmi',
+        url: 'https://www.legaseriea.it',
+        note: 'Rujukan resmi kompetisi Serie A Italia.',
+      },
+    ],
+    sourceCompletionNote:
+      'Referensi data pertandingan spesifik wakil Italia di Eropa perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung pelatih klub Serie A belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Efektivitas formasi tiga bek modern (3-5-2 dan 3-4-2-1) klub Serie A dalam menyerang sekaligus menjaga transisi bertahan.',
+      who: 'Klub-klub papan atas Serie A beserta wide centre-back dan wing-back mereka.',
+      when: 'Musim kompetisi 2026/27 (dipublikasikan 7 November 2026).',
+      where: 'Kompetisi Serie A Italia dan laga antarklub Eropa.',
+      why: 'Skema tiga bek menciptakan keunggulan 3v2 di lini pertama dan lima jalur serangan cair tanpa mengorbankan rest defense.',
+      how: 'Wing-back naik melebar, wide centre-back aktif melakukan overlap, lalu cepat kembali ke blok 5-3-2 saat kehilangan bola.',
+    },
     content: [
       'Anggapan lama bahwa skema tiga bek di Serie A identik dengan permainan bertahan pasif kini sepenuhnya terpatahkan. Klub-klub papan atas Italia justru memakai formasi 3-5-2 dan 3-4-2-1 sebagai platform serangan paling cair untuk menciptakan keunggulan jumlah pemain di Eropa.',
       'Kunci efektivitasnya terletak pada kebebasan dua bek tengah sisi luar (wide centre-backs) yang aktif melakukan overlap dan membawa bola masuk hingga sepertiga akhir lawan.',
@@ -332,14 +613,45 @@ export const ARTICLES: Article[] = [
     title: 'Evaluasi Jeda Internasional: Identitas Permainan Lebih Berani Jelang Kualifikasi Utama',
     excerpt: 'Pelatih tim nasional kini mengadopsi kombinasi pemain satu klub dan pola pressing modern guna memangkas kesenjangan taktik dengan level sepak bola klub.',
     category: 'Internasional',
+    rubric: 'Berita Sepak Bola',
+    newsType: 'Hard News',
     publishedAt: '6 November 2026',
+    publishedTime: '13:00 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: MEDIA_IMAGES.europeanDerbyCelebration,
     imageCaption: 'Skuad tim nasional mengandalkan kekompakan pemain muda dengan tempo tinggi sepanjang laga.',
+    photoCredit: {
+      caption: 'Skuad tim nasional mengandalkan kekompakan pemain muda dengan tempo tinggi sepanjang laga.',
+      source: 'Ilustrasi Editorial Whistle Side',
+      needsCompletion: true,
+      completionNote:
+        'Foto ilustrasi internal. Nama fotografer dan sumber dokumentasi resmi tim nasional perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'FIFA — Kalender Pertandingan Internasional',
+        type: 'Institusi Resmi',
+        url: 'https://www.fifa.com',
+        note: 'Rujukan agenda jeda internasional dan kualifikasi turnamen utama.',
+      },
+    ],
+    sourceCompletionNote:
+      'Referensi pertandingan tim nasional spesifik dan kutipan pelatih timnas perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan langsung pelatih atau pemain tim nasional belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Pergeseran taktik tim nasional menuju pressing terstruktur dan penguasaan bola progresif menjelang kualifikasi utama.',
+      who: 'Pelatih tim nasional dan generasi pemain di bawah usia 23 tahun.',
+      when: 'Agenda jeda internasional November 2026 (dipublikasikan 6 November 2026).',
+      where: 'Laga-laga uji coba dan kualifikasi internasional.',
+      why: 'Waktu pemusatan latihan singkat menuntut cara cepat menyamakan tempo taktik dengan level klub top.',
+      how: 'Memasangkan blok pemain dari klub yang sama pada satu sisi lapangan dan memberi kepercayaan kepada pemain U-23.',
+    },
     content: [
       'Sepak bola tim nasional perlahan meninggalkan gaya bermain pragmatis yang dulu mendominasi agenda kualifikasi. Menjelang fase krusial kualifikasi turnamen utama, para pelatih timnas kini berani menerapkan pressing terstruktur dan penguasaan bola progresif layaknya klub top Eropa.',
       'Perubahan berani ini dimungkinkan oleh strategi baru dalam menyusun kerangka skuad: memaksimalkan koneksi pemain yang sudah terbiasa bermain bersama di level klub.',
@@ -366,14 +678,54 @@ export const ARTICLES: Article[] = [
     title: 'Lamine Yamal: Evolusi Sang Golden Boy Menjadi Tulang Punggung Barcelona',
     excerpt: 'Di usia 19 tahun, Lamine Yamal tidak lagi dipandang sekadar prospek muda, melainkan motor serangan utama FC Barcelona dan Timnas Spanyol sepanjang 2025-2026.',
     category: 'Pemain',
+    rubric: 'Profil Pemain',
+    newsType: 'Soft News / Feature',
     publishedAt: '15 November 2026',
+    publishedTime: '19:15 WIB',
+    updatedAt: '18 November 2026 · 14:30 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: lamineYamalActionImg,
     imageCaption: 'Aksi eksplosif dari sisi kanan menjadi identitas utama permainan modern Lamine Yamal bersama klub dan tim nasional.',
+    photoCredit: {
+      caption: 'Lamine Yamal saat membela Timnas Spanyol melawan Prancis pada 14 Juli 2026.',
+      photographer: 'Bryan Berlin',
+      source: 'Wikimedia Commons',
+      license: 'CC BY-SA 4.0',
+      sourceUrl:
+        'https://commons.wikimedia.org/wiki/File:Lamine_Yamal_France_v_Spain_7.24.26-057.jpg',
+      needsCompletion: false,
+    },
+    sources: [
+      {
+        name: 'FC Barcelona — Situs Resmi Klub',
+        type: 'Institusi Resmi',
+        url: 'https://www.fcbarcelona.com',
+        note: 'Profil resmi skuad utama FC Barcelona.',
+      },
+      {
+        name: 'Wikimedia Commons — Dokumentasi Foto Lamine Yamal (2026)',
+        type: 'Media',
+        url: 'https://commons.wikimedia.org/wiki/File:Lamine_Yamal_France_v_Spain_7.24.26-057.jpg',
+        note: 'Arsip foto berlisensi CC BY-SA 4.0 oleh Bryan Berlin.',
+      },
+    ],
+    sourceCompletionNote:
+      'Kutipan wawancara primer pemain atau staf pelatih Barcelona perlu dilengkapi oleh redaksi Whistle Side apabila liputan langsung tersedia.',
+    interviewQuoteStatus:
+      'Artikel profil ini disusun berbasis pengamatan performa. Kutipan wawancara langsung Lamine Yamal belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Perkembangan dan evolusi permainan Lamine Yamal menjadi motor serangan utama klub dan tim nasional.',
+      who: 'Lamine Yamal (19 tahun), penyerang sayap FC Barcelona dan Timnas Spanyol.',
+      when: 'Periode kompetisi 2025 hingga musim 2026/27 (dipublikasikan 15 November 2026).',
+      where: 'La Liga, UEFA Champions League bersama FC Barcelona, serta laga internasional Timnas Spanyol.',
+      why: 'Konsistensi performa, efisiensi pengambilan keputusan di sepertiga akhir, dan ketahanan fisik pada jadwal padat.',
+      how: 'Mengombinasikan dribel satu lawan satu, cut-inside kaki kiri, umpan diagonal ke tiang jauh, serta kontribusi menekan lawan.',
+    },
     pullQuote: 'Kematangan pengambilan keputusan di sepertiga akhir menjadikan Yamal pemain paling sulit ditebak di sisi kanan penyerangan Eropa.',
     content: [
       'Memasuki usia 19 tahun pada musim 2026/27, Lamine Yamal telah menuntaskan transisi besar dari sekadar wonderkid sensasional menjadi tulang punggung tak tergantikan FC Barcelona dan Timnas Spanyol. Sepanjang kalender kompetisi 2025 hingga 2026, konsistensinya menjaga level performa di laga-laga bertekanan tinggi membuktikan kematangan yang jauh melampaui usianya.',
@@ -401,14 +753,54 @@ export const ARTICLES: Article[] = [
     title: 'Warren Zaïre-Emery: Mesin Baru Lini Tengah Paris Saint-Germain',
     excerpt: 'Pada usia 20 tahun, Warren Zaïre-Emery mengukuhkan diri sebagai jenderal lini tengah Paris Saint-Germain dan pilar penting Timnas Prancis berkat energi tanpa henti.',
     category: 'Pemain',
+    rubric: 'Profil Pemain',
+    newsType: 'Soft News / Feature',
     publishedAt: '14 November 2026',
+    publishedTime: '17:00 WIB',
+    updatedAt: '18 November 2026 · 14:35 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: warrenZaireEmeryActionImg,
     imageCaption: 'Kontrol tempo dan daya jelajah tinggi menjadi fondasi permainan Warren Zaïre-Emery di ruang mesin PSG.',
+    photoCredit: {
+      caption: 'Warren Zaïre-Emery saat memperkuat Timnas Prancis kontra Maroko pada 9 Juli 2026.',
+      photographer: 'Bryan Berlin',
+      source: 'Wikimedia Commons',
+      license: 'CC BY-SA 4.0',
+      sourceUrl:
+        'https://commons.wikimedia.org/wiki/File:Warren_Zaire-Emery_France_v_Morocco_9_July_2026-051.jpg',
+      needsCompletion: false,
+    },
+    sources: [
+      {
+        name: 'Paris Saint-Germain — Situs Resmi Klub',
+        type: 'Institusi Resmi',
+        url: 'https://www.psg.fr',
+        note: 'Profil resmi skuad Paris Saint-Germain.',
+      },
+      {
+        name: 'Wikimedia Commons — Dokumentasi Foto Warren Zaïre-Emery (2026)',
+        type: 'Media',
+        url: 'https://commons.wikimedia.org/wiki/File:Warren_Zaire-Emery_France_v_Morocco_9_July_2026-051.jpg',
+        note: 'Arsip foto berlisensi CC BY-SA 4.0 oleh Bryan Berlin.',
+      },
+    ],
+    sourceCompletionNote:
+      'Kutipan wawancara langsung pemain atau pelatih PSG perlu dilengkapi oleh redaksi Whistle Side apabila tersedia.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung Warren Zaïre-Emery belum tersedia dalam artikel ini dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Peran sentral Warren Zaïre-Emery sebagai pengatur ritme lini tengah PSG dan pilar regenerasi Timnas Prancis.',
+      who: 'Warren Zaïre-Emery (20 tahun), gelandang Paris Saint-Germain dan Timnas Prancis.',
+      when: 'Sepanjang musim 2025-2026 hingga November 2026.',
+      where: 'Ligue 1, UEFA Champions League bersama PSG, dan laga internasional Les Bleus.',
+      why: 'Kemampuan lolos dari tekanan tinggi, ketahanan fisik 90 menit, dan konsistensi distribusi umpan.',
+      how: 'Melindungi bola di ruang sempit, menjaga transisi dari lini belakang ke depan, serta melakukan tusukan terlambat ke kotak penalti.',
+    },
     pullQuote: 'Zaïre-Emery memadukan ketenangan gelandang veteran dengan daya jelajah fisik yang membuat lini tengah PSG sulit ditembus.',
     content: [
       'Di usia 20 tahun, Warren Zaïre-Emery telah menjelma menjadi jenderal lini tengah mutlak bagi Paris Saint-Germain sekaligus bagian penting dari regenerasi skuad Timnas Prancis. Sepanjang musim 2025-2026, perannya tidak lagi sebatas pelapis muda berbakat, melainkan pengatur ritme utama yang menentukan stabilitas permainan tim.',
@@ -436,14 +828,54 @@ export const ARTICLES: Article[] = [
     title: 'Pau Cubarsí: Jenderal Lini Belakang Modern Jebolan La Masia',
     excerpt: 'Pau Cubarsí membuktikan bahwa ketenangan membaca permainan dan akurasi umpan build-up kelas dunia mampu mengangkat standar bek tengah modern di FC Barcelona.',
     category: 'Pemain',
+    rubric: 'Profil Pemain',
+    newsType: 'Soft News / Feature',
     publishedAt: '13 November 2026',
+    publishedTime: '16:40 WIB',
+    updatedAt: '18 November 2026 · 14:40 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: pauCubarsiActionImg,
     imageCaption: 'Distribusi bola presisi dari lini pertahanan merupakan ciri khas bek tengah modern jebolan La Masia.',
+    photoCredit: {
+      caption: 'Pau Cubarsí saat memperkuat Timnas Spanyol melawan Prancis pada 14 Juli 2026.',
+      photographer: 'Bryan Berlin',
+      source: 'Wikimedia Commons',
+      license: 'CC BY-SA 4.0',
+      sourceUrl:
+        'https://commons.wikimedia.org/wiki/File:Pau_Cubarsi_France_v_Spain_7.24.26-116.jpg',
+      needsCompletion: false,
+    },
+    sources: [
+      {
+        name: 'FC Barcelona — Situs Resmi Klub',
+        type: 'Institusi Resmi',
+        url: 'https://www.fcbarcelona.com',
+        note: 'Profil resmi skuad utama FC Barcelona.',
+      },
+      {
+        name: 'Wikimedia Commons — Dokumentasi Foto Pau Cubarsí (2026)',
+        type: 'Media',
+        url: 'https://commons.wikimedia.org/wiki/File:Pau_Cubarsi_France_v_Spain_7.24.26-116.jpg',
+        note: 'Arsip foto berlisensi CC BY-SA 4.0 oleh Bryan Berlin.',
+      },
+    ],
+    sourceCompletionNote:
+      'Kutipan langsung pemain atau pelatih lini pertahanan Barcelona perlu dilengkapi oleh redaksi Whistle Side jika wawancara tersedia.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung Pau Cubarsí belum tersedia dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Kiprah Pau Cubarsí sebagai bek tengah modern yang menggabungkan distribusi bola progresif dan ketenangan bertahan.',
+      who: 'Pau Cubarsí (19 tahun), bek tengah FC Barcelona lulusan akademi La Masia.',
+      when: 'Musim kompetisi 2025-2026 hingga November 2026.',
+      where: 'Jantung pertahanan FC Barcelona di La Liga dan panggung Eropa.',
+      why: 'Sistem garis pertahanan tinggi Barcelona menuntut bek tengah yang tenang di bawah tekanan dan akurat memulai serangan.',
+      how: 'Melepas umpan vertikal pemecah garis pressing dengan kedua kaki serta menjaga koordinasi garis offside dengan timing tekel bersih.',
+    },
     pullQuote: 'Setiap umpan vertikal Cubarsí dari garis pertahanan mampu memangkas dua lapis pressing lawan dalam satu detik.',
     content: [
       'Lulusan akademi La Masia kembali melahirkan standar baru di lini pertahanan melalui sosok Pau Cubarsí. Memasuki musim 2025-2026 hingga menginjak usia 19 tahun, bek tengah FC Barcelona ini tampil layaknya komandan berpengalaman yang memadukan ketangguhan duel dan kecerdasan distribusi bola.',
@@ -471,14 +903,54 @@ export const ARTICLES: Article[] = [
     title: 'Lennart Karl: Permata Baru Bayern Munich yang Siap Mengguncang Eropa',
     excerpt: 'Ketajaman di level akademi membawa gelandang serang muda Lennart Karl menembus skuad utama Bayern Munich pada musim 2025-2026 dengan performa menjanjikan.',
     category: 'Pemain',
+    rubric: 'Profil Pemain',
+    newsType: 'Soft News / Feature',
     publishedAt: '12 November 2026',
+    publishedTime: '15:30 WIB',
+    updatedAt: '18 November 2026 · 14:45 WIB',
     readTime: '5 menit baca',
     author: {
+      id: 'andika-chris-ardiansyah',
       name: 'Andika Chris Ardiansyah',
       role: '',
     },
     image: lennartKarlActionImg,
     imageCaption: 'Perkembangan pesat dari tim akademi menuju skuad senior menjadikan Lennart Karl sorotan utama Bundesliga.',
+    photoCredit: {
+      caption: 'Lennart Karl merayakan gol dalam laga kompetitif bersama Bayern Munich.',
+      source: 'Attacking Football / Yahoo Sports',
+      sourceUrl:
+        'https://sports.yahoo.com/remember-name-lennart-karl-bayern-143400778.html',
+      needsCompletion: true,
+      completionNote:
+        'Nama fotografer asli dan keterangan lisensi resmi perlu dilengkapi oleh redaksi Whistle Side.',
+    },
+    sources: [
+      {
+        name: 'FC Bayern Munich — Situs Resmi Klub',
+        type: 'Institusi Resmi',
+        url: 'https://fcbayern.com',
+        note: 'Profil resmi tim dan akademi FC Bayern Munich.',
+      },
+      {
+        name: 'Attacking Football via Yahoo Sports — Profil Lennart Karl',
+        type: 'Media',
+        url: 'https://sports.yahoo.com/remember-name-lennart-karl-bayern-143400778.html',
+        note: 'Rujukan profil awal dan perkembangan Lennart Karl di akademi Bayern.',
+      },
+    ],
+    sourceCompletionNote:
+      'Kutipan wawancara langsung Lennart Karl atau pelatih tim senior Bayern perlu dilengkapi oleh redaksi Whistle Side.',
+    interviewQuoteStatus:
+      'Kutipan wawancara langsung narasumber belum tersedia dalam artikel ini dan perlu dilengkapi oleh redaksi Whistle Side.',
+    fiveWOneH: {
+      what: 'Promosi dan penampilan menjanjikan gelandang serang muda Lennart Karl dari akademi ke skuad utama Bayern Munich.',
+      who: 'Lennart Karl (18 tahun), gelandang serang FC Bayern Munich.',
+      when: 'Rekor akademi 2025 hingga menembus rotasi tim senior musim 2026/27.',
+      where: 'Allianz Arena, Bundesliga, dan kompetisi piala domestik Jerman.',
+      why: 'Produktivitas gol tinggi di level junior serta kepercayaan diri menghadapi tempo cepat tim utama.',
+      how: 'Beroperasi di ruang antarlini (half-space), mengandalkan akselerasi pendek, bola mati, dan tembakan kaki kiri dari tepi kotak penalti.',
+    },
     pullQuote: 'Keberanian menembak dari luar kotak penalti dan kecerdikan mencari ruang membuat Karl cepat mencuri kepercayaan tim utama Bayern.',
     content: [
       'Bayern Munich kembali memetik buah manis dari investasi pembinaan pemain muda mereka melalui kemunculan Lennart Karl. Setelah mencatat rekor produktivitas impresif di level akademi Jerman pada 2025, gelandang serang berusia 18 tahun ini sukses menembus rotasi skuad utama Die Roten pada musim 2026/27.',

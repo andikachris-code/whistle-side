@@ -1,10 +1,25 @@
+export type EditorialRubric =
+  | 'Berita Sepak Bola'
+  | 'Liga dan Kompetisi'
+  | 'Klub'
+  | 'Profil Pemain'
+  | 'Analisis dan Opini';
+
+export type NewsType = 'Hard News' | 'Soft News / Feature' | 'Analisis & Opini';
+
 export type PageRoute =
   | { name: 'home' }
-  | { name: 'news'; initialCategory?: string }
+  | {
+      name: 'news';
+      initialCategory?: string;
+      initialRubric?: EditorialRubric | 'Foto Jurnalistik';
+    }
   | { name: 'matches'; initialCompetition?: string }
   | { name: 'premier-league' }
   | { name: 'champions-league' }
   | { name: 'players' }
+  | { name: 'foto-jurnalistik' }
+  | { name: 'author'; id: string }
   | { name: 'about' }
   | { name: 'article'; id: string };
 
@@ -18,25 +33,98 @@ export type NewsCategory =
   | 'Internasional'
   | 'Pemain';
 
+export interface PhotoCredit {
+  caption: string;
+  photographer?: string;
+  source?: string;
+  license?: string;
+  sourceUrl?: string;
+  needsCompletion?: boolean;
+  completionNote?: string;
+}
+
+export interface ArticleSource {
+  name: string;
+  type: 'Institusi Resmi' | 'Media' | 'Data Pertandingan' | 'Narasumber';
+  url?: string;
+  note?: string;
+}
+
+export interface ArticleFiveWOneH {
+  what: string;
+  who: string;
+  when: string;
+  where: string;
+  why: string;
+  how: string;
+}
+
+export interface AuthorProfile {
+  id: string;
+  name: string;
+  role: string;
+  shortBio: string;
+  fullBio: string[];
+  avatar?: string;
+  focusAreas: string[];
+  instagramUrl?: string;
+  email: string;
+  location: string;
+}
+
 export interface Article {
   id: string;
   title: string;
   excerpt: string;
   category: NewsCategory;
+  rubric: EditorialRubric;
+  newsType: NewsType;
   publishedAt: string;
+  publishedTime: string;
+  updatedAt?: string;
   readTime: string;
   author: {
+    id: string;
     name: string;
     role: string;
   };
   image: string;
   imageCaption: string;
+  photoCredit: PhotoCredit;
+  sources: ArticleSource[];
+  sourceCompletionNote?: string;
+  interviewQuoteStatus: string;
+  fiveWOneH: ArticleFiveWOneH;
   featured?: boolean;
   breaking?: boolean;
   pullQuote?: string;
   content: string[];
   tags: string[];
   relatedIds: string[];
+}
+
+export type PhotoJournalismCategory =
+  | 'Aksi Pertandingan'
+  | 'Profil Pemain'
+  | 'Atmosfer Stadion'
+  | 'Taktik & Lapangan';
+
+export interface PhotoJournalismItem {
+  id: string;
+  title: string;
+  caption: string;
+  category: PhotoJournalismCategory;
+  dateLabel: string;
+  location: string;
+  image: string;
+  photographer?: string;
+  source?: string;
+  license?: string;
+  sourceUrl?: string;
+  needsCompletion?: boolean;
+  completionNote?: string;
+  linkedArticleId?: string;
+  featured?: boolean;
 }
 
 export type CompetitionName =

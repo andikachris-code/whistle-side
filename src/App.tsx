@@ -4,10 +4,12 @@ import { Navbar } from './components/Navbar';
 import { SearchModal } from './components/SearchModal';
 import { AboutPage } from './pages/AboutPage';
 import { ArticleDetailPage } from './pages/ArticleDetailPage';
+import { AuthorProfilePage } from './pages/AuthorProfilePage';
 import { CompetitionPage } from './pages/CompetitionPage';
 import { HomePage } from './pages/HomePage';
 import { MatchesPage } from './pages/MatchesPage';
 import { NewsPage } from './pages/NewsPage';
+import { PhotojournalismPage } from './pages/PhotojournalismPage';
 import { PlayersPage } from './pages/PlayersPage';
 import { PageRoute } from './types/football';
 
@@ -19,7 +21,12 @@ function parseHashToRoute(): PageRoute {
   if (raw === 'premier-league') return { name: 'premier-league' };
   if (raw === 'champions-league') return { name: 'champions-league' };
   if (raw === 'players') return { name: 'players' };
+  if (raw === 'foto-jurnalistik') return { name: 'foto-jurnalistik' };
   if (raw === 'about') return { name: 'about' };
+  if (raw.startsWith('author/')) {
+    const id = raw.slice('author/'.length);
+    if (id) return { name: 'author', id };
+  }
   if (raw.startsWith('article/')) {
     const id = raw.slice('article/'.length);
     if (id) return { name: 'article', id };
@@ -29,6 +36,7 @@ function parseHashToRoute(): PageRoute {
 
 function routeToHash(route: PageRoute): string {
   if (route.name === 'article') return `#article/${route.id}`;
+  if (route.name === 'author') return `#author/${route.id}`;
   return `#${route.name}`;
 }
 
@@ -78,8 +86,9 @@ export default function App() {
         {route.name === 'home' && <HomePage onNavigate={navigate} />}
         {route.name === 'news' && (
           <NewsPage
-            key={route.initialCategory || 'all'}
+            key={`${route.initialRubric || 'all'}-${route.initialCategory || 'all'}`}
             initialCategory={route.initialCategory}
+            initialRubric={route.initialRubric}
             onNavigate={navigate}
           />
         )}
@@ -103,6 +112,16 @@ export default function App() {
           />
         )}
         {route.name === 'players' && <PlayersPage onNavigate={navigate} />}
+        {route.name === 'foto-jurnalistik' && (
+          <PhotojournalismPage onNavigate={navigate} />
+        )}
+        {route.name === 'author' && (
+          <AuthorProfilePage
+            key={route.id}
+            authorId={route.id}
+            onNavigate={navigate}
+          />
+        )}
         {route.name === 'about' && (
           <AboutPage
             onNavigate={navigate}

@@ -32,7 +32,7 @@ export function Footer({ onNavigate }: FooterProps) {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12">
           {/* Brand Column */}
-          <div className="lg:col-span-4 space-y-5">
+          <div className="lg:col-span-3 space-y-5">
             <a
               href="#home"
               onClick={(e) => {
@@ -81,7 +81,7 @@ export function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          {/* Navigation & Coverage Column */}
+          {/* Navigation Column */}
           <div className="lg:col-span-2 space-y-4">
             <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400">
               Navigasi
@@ -109,19 +109,68 @@ export function Footer({ onNavigate }: FooterProps) {
             </ul>
           </div>
 
+          {/* Rubrikasi & Redaksi Column */}
+          <div className="lg:col-span-2 space-y-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+              Rubrikasi
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {[
+                {
+                  label: 'Berita Sepak Bola',
+                  route: { name: 'news', initialRubric: 'Berita Sepak Bola' } as PageRoute,
+                },
+                {
+                  label: 'Liga & Kompetisi',
+                  route: { name: 'news', initialRubric: 'Liga dan Kompetisi' } as PageRoute,
+                },
+                {
+                  label: 'Klub',
+                  route: { name: 'news', initialRubric: 'Klub' } as PageRoute,
+                },
+                {
+                  label: 'Profil Pemain',
+                  route: { name: 'news', initialRubric: 'Profil Pemain' } as PageRoute,
+                },
+                {
+                  label: 'Analisis & Opini',
+                  route: { name: 'news', initialRubric: 'Analisis dan Opini' } as PageRoute,
+                },
+                {
+                  label: 'Foto Jurnalistik',
+                  route: { name: 'news', initialRubric: 'Foto Jurnalistik' } as PageRoute,
+                },
+                {
+                  label: 'Profil Penulis',
+                  route: { name: 'author', id: 'andika-chris-ardiansyah' } as PageRoute,
+                },
+              ].map((link) => (
+                <li key={link.label}>
+                  <button
+                    type="button"
+                    onClick={() => onNavigate(link.route)}
+                    className="text-zinc-300 transition-colors hover:text-[#E53935]"
+                  >
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Contact Info Column */}
-          <div className="lg:col-span-3 space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400">
               Kontak &amp; Meja Redaksi
             </h3>
             <div className="space-y-3 text-sm text-zinc-300">
               <div className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#E53935]" />
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold text-white">Redaksi &amp; Berita</p>
                   <a
                     href="mailto:editorial@whistleside.com"
-                    className="text-zinc-300 hover:text-white underline decoration-zinc-600 underline-offset-4"
+                    className="break-all text-xs text-zinc-300 hover:text-white underline decoration-zinc-600 underline-offset-4"
                   >
                     editorial@whistleside.com
                   </a>
@@ -130,11 +179,11 @@ export function Footer({ onNavigate }: FooterProps) {
 
               <div className="flex items-start gap-2.5">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#E53935]" />
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold text-white">Kerja Sama</p>
                   <a
                     href="mailto:partners@whistleside.com"
-                    className="text-zinc-300 hover:text-white underline decoration-zinc-600 underline-offset-4"
+                    className="break-all text-xs text-zinc-300 hover:text-white underline decoration-zinc-600 underline-offset-4"
                   >
                     partners@whistleside.com
                   </a>
@@ -143,8 +192,8 @@ export function Footer({ onNavigate }: FooterProps) {
 
               <div className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#E53935]" />
-                <p className="text-zinc-400">
-                  Meja Redaksi Digital · Jakarta &amp; London
+                <p className="text-xs text-zinc-400">
+                  Meja Redaksi Digital · Indonesia
                 </p>
               </div>
             </div>

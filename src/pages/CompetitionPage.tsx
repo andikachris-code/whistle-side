@@ -103,6 +103,7 @@ export function CompetitionPage({
                   key={article.id}
                   article={article}
                   onSelect={(id) => onNavigate({ name: 'article', id })}
+                  onSelectAuthor={(id) => onNavigate({ name: 'author', id })}
                 />
               ))}
             </div>

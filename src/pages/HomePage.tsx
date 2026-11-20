@@ -4,6 +4,7 @@ import { BreakingTicker } from '../components/BreakingTicker';
 import { ClubBadge } from '../components/ClubBadge';
 import { EditorialImage } from '../components/EditorialImage';
 import { MatchCard } from '../components/MatchCard';
+import { PhotojournalismSection } from '../components/PhotojournalismSection';
 import { ARTICLES } from '../data/articles';
 import { findClubByName, SAMPLE_MATCHES } from '../data/matches';
 import { PLAYERS } from '../data/players';
@@ -141,6 +142,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 key={article.id}
                 article={article}
                 onSelect={(id) => onNavigate({ name: 'article', id })}
+                onSelectAuthor={(id) => onNavigate({ name: 'author', id })}
               />
             ))}
           </div>
@@ -332,6 +334,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Foto Jurnalistik Pilihan */}
+      <section className="border-t border-zinc-200 bg-[#F7F7F8] py-12 sm:py-14">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <PhotojournalismSection mode="featured" onNavigate={onNavigate} />
         </div>
       </section>
 

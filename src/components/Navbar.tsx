@@ -10,7 +10,11 @@ interface NavbarProps {
   onScrollToContact: () => void;
 }
 
-const NAV_ITEMS: { label: string; route: PageRoute; key: PageRoute['name'] }[] = [
+const NAV_ITEMS: {
+  label: string;
+  route: PageRoute;
+  key: PageRoute['name'];
+}[] = [
   { label: 'Beranda', route: { name: 'home' }, key: 'home' },
   { label: 'Berita', route: { name: 'news' }, key: 'news' },
   { label: 'Pertandingan', route: { name: 'matches' }, key: 'matches' },

@@ -1,6 +1,7 @@
-import { ArrowRight, Search, X } from 'lucide-react';
+import { ArrowRight, Camera, Search, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ARTICLES } from '../data/articles';
+import { PHOTO_JOURNALISM_ITEMS } from '../data/photojournalism';
 import { PLAYERS } from '../data/players';
 import { PageRoute } from '../types/football';
 
@@ -40,6 +41,8 @@ export function SearchModal({ isOpen, onClose, onNavigate }: SearchModalProps) {
         a.title.toLowerCase().includes(normalized) ||
         a.excerpt.toLowerCase().includes(normalized) ||
         a.category.toLowerCase().includes(normalized) ||
+        a.rubric.toLowerCase().includes(normalized) ||
+        a.newsType.toLowerCase().includes(normalized) ||
         a.tags.some((t) => t.toLowerCase().includes(normalized)) ||
         a.author.name.toLowerCase().includes(normalized)
     );
@@ -53,6 +56,17 @@ export function SearchModal({ isOpen, onClose, onNavigate }: SearchModalProps) {
         p.club.toLowerCase().includes(normalized) ||
         p.league.toLowerCase().includes(normalized) ||
         p.position.toLowerCase().includes(normalized)
+    );
+  }, [normalized]);
+
+  const matchedPhotos = useMemo(() => {
+    if (!normalized) return [];
+    return PHOTO_JOURNALISM_ITEMS.filter(
+      (item) =>
+        item.title.toLowerCase().includes(normalized) ||
+        item.caption.toLowerCase().includes(normalized) ||
+        item.category.toLowerCase().includes(normalized) ||
+        (item.photographer?.toLowerCase().includes(normalized) ?? false)
     );
   }, [normalized]);
 
@@ -131,7 +145,7 @@ export function SearchModal({ isOpen, onClose, onNavigate }: SearchModalProps) {
                     type="button"
                     onClick={() => {
                       onClose();
-                      onNavigate({ name: 'players' });
+                      onNavigate({ name: 'article', id: player.articleId });
                     }}
                     className="flex items-center justify-between rounded-lg border border-zinc-200 p-3 text-left transition-colors hover:border-[#E53935] hover:bg-zinc-50"
                   >
@@ -144,6 +158,42 @@ export function SearchModal({ isOpen, onClose, onNavigate }: SearchModalProps) {
                       </div>
                     </div>
                     <ArrowRight className="h-4 w-4 text-zinc-400" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {matchedPhotos.length > 0 && (
+            <div>
+              <h3 className="mb-2.5 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-zinc-500">
+                <Camera className="h-3.5 w-3.5 text-[#E53935]" />
+                <span>Foto Jurnalistik ({matchedPhotos.length})</span>
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                {matchedPhotos.slice(0, 4).map((photo) => (
+                  <button
+                    key={photo.id}
+                    type="button"
+                    onClick={() => {
+                      onClose();
+                      if (photo.linkedArticleId) {
+                        onNavigate({ name: 'article', id: photo.linkedArticleId });
+                      } else {
+                        onNavigate({ name: 'news', initialRubric: 'Foto Jurnalistik' });
+                      }
+                    }}
+                    className="flex items-center justify-between gap-2 rounded-lg border border-zinc-200 p-3 text-left transition-colors hover:border-[#E53935] hover:bg-zinc-50"
+                  >
+                    <div className="min-w-0">
+                      <div className="truncate text-xs font-semibold text-[#E53935]">
+                        {photo.category}
+                      </div>
+                      <div className="truncate text-sm font-semibold text-[#111111]">
+                        {photo.title}
+                      </div>
+                    </div>
+                    <ArrowRight className="h-4 w-4 shrink-0 text-zinc-400" />
                   </button>
                 ))}
               </div>
