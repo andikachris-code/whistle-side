@@ -1,0 +1,88 @@
+import { PlayerProfile } from '../types/football';
+import lamineYamalImg from '../assets/players/lamine-yamal.jpg';
+import lennartKarlImg from '../assets/players/lennart-karl.jpg';
+import pauCubarsiImg from '../assets/players/pau-cubarsi.jpg';
+import warrenZaireEmeryImg from '../assets/players/warren-zaire-emery.jpg';
+
+export const PLAYERS: PlayerProfile[] = [
+  {
+    id: 'lamine-yamal',
+    name: 'Lamine Yamal',
+    club: 'FC Barcelona',
+    league: 'La Liga',
+    position: 'Penyerang',
+    nationality: 'Spanyol',
+    age: 19,
+    squadNumber: 19,
+    image: lamineYamalImg,
+    summary: 'Penyerang sayap sensasional yang memecahkan berbagai rekor usia termuda. Dikenal dengan dribel mematikan, visi bermain di atas rata-rata, dan ketenangan di sepertiga akhir.',
+    scoutingNote: 'Memimpin daftar pemain U-21 di Eropa untuk penciptaan peluang emas dan rasio dribel sukses per 90 menit.',
+    stats: {
+      appearances: 14,
+      goals: 5,
+      assists: 7,
+      rating: '8.1',
+    },
+    articleId: 'profil-lamine-yamal',
+  },
+  {
+    id: 'warren-zaire-emery',
+    name: 'Warren Zaïre-Emery',
+    club: 'Paris Saint-Germain',
+    league: 'Ligue 1',
+    position: 'Gelandang',
+    nationality: 'Prancis',
+    age: 20,
+    squadNumber: 33,
+    image: warrenZaireEmeryImg,
+    summary: 'Gelandang sentral modern yang mendikte tempo permainan. Memiliki mesin fisik luar biasa untuk memenangkan duel dan mendistribusikan bola di bawah tekanan tinggi.',
+    scoutingNote: 'Menjadi jangkar utama PSG di Liga Champions dengan tingkat akurasi umpan di atas 92% saat ditekan lawan.',
+    stats: {
+      appearances: 15,
+      goals: 2,
+      assists: 4,
+      rating: '7.8',
+    },
+    articleId: 'profil-warren-zaire-emery',
+  },
+  {
+    id: 'pau-cubarsi',
+    name: 'Pau Cubarsí',
+    club: 'FC Barcelona',
+    league: 'La Liga',
+    position: 'Bek',
+    nationality: 'Spanyol',
+    age: 19,
+    squadNumber: 2,
+    image: pauCubarsiImg,
+    summary: 'Bek tengah modern yang menguasai seni build-up dari lini belakang. Tenang saat memegang bola dan agresif saat memotong jalur umpan lawan sebelum mencapai kotak penalti.',
+    scoutingNote: 'Mencatatkan rasio umpan progresif tertinggi bagi pemain bertahan di liga domestik.',
+    stats: {
+      appearances: 13,
+      goals: 0,
+      assists: 1,
+      rating: '7.6',
+    },
+    articleId: 'profil-pau-cubarsi',
+  },
+  {
+    id: 'lennart-karl',
+    name: 'Lennart Karl',
+    club: 'Bayern Munich',
+    league: 'Bundesliga',
+    position: 'Gelandang',
+    nationality: 'Jerman',
+    age: 18,
+    squadNumber: 20,
+    image: lennartKarlImg,
+    summary: 'Bakat paling bersinar dari akademi Jerman saat ini. Gelandang serang eksplosif yang memiliki insting mencetak gol tinggi dan kemampuan mencari ruang kosong di area pertahanan lawan.',
+    scoutingNote: 'Mulai mengamankan menit bermain reguler di skuad utama Bayern dan tampil memukau di kompetisi piala domestik.',
+    stats: {
+      appearances: 10,
+      goals: 3,
+      assists: 2,
+      rating: '7.5',
+    },
+    articleId: 'profil-lennart-karl',
+  },
+];
