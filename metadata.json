@@ -1,6 +1,0 @@
-{
-  "name": "Whistle Side",
-  "description": "Digital football sports media covering the Premier League, UEFA Champions League, European leagues, player spotlights, and match fixtures.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
